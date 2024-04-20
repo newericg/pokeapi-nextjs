@@ -1,5 +1,5 @@
 "use client"
-import { PokemonCard }  from "@/components";
+import { PokemonCard }  from "@components";
 import { useState } from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";

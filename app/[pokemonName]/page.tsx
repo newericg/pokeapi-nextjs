@@ -1,8 +1,8 @@
 import { getPokemon, getPokemonText } from "@/lib/pokemonAPI";
-import { PokemonImage } from "@/components";
-import { Progress } from "@/components/ui/progress";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { PokemonImage } from "@components";
+import { Progress } from "@components/ui/progress";
+import { Card } from "@components/ui/card";
+import { Button } from "@components/ui/button";
 import { ArrowBigLeftIcon } from "lucide-react";
 import Link from "next/link"
 
