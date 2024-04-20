@@ -1,5 +1,5 @@
 import { getPokemon, getPokemonText } from "@/lib/pokemonAPI";
-import { PokemonImage } from "@/components/pokemon-image";
+import { PokemonImage } from "@/components";
 import { Progress } from "@/components/ui/progress";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

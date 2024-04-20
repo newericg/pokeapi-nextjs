@@ -1,15 +1,15 @@
 "use client"
-import { PokemonCard } from "./pokemon-card";
+import { PokemonCard }  from "@/components";
 import { useState } from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 
 
 interface PokemonGridProps {
-    pokemonList: any
+    pokemonList: any,
 }
 
-export function PokemonGrid({ pokemonList } : PokemonGridProps) {
+export default function PokemonGrid({ pokemonList} : PokemonGridProps) {
     const [ searchText, setSearchText ] = useState("");
 
     const searchFilter = (pokemonList: any) => {
@@ -40,8 +40,7 @@ export function PokemonGrid({ pokemonList } : PokemonGridProps) {
         </div>
 
         <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-3 lg:text-left">
-            {filteredPokemonList.map((pokemon : any) => {
-                
+            {filteredPokemonList.map((pokemon : any) => {   
                 return (
                     <PokemonCard name={pokemon.name} key={pokemon.name + "Card"}/>
                 )

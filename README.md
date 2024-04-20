@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+POKEDEX
 
 ## Getting Started
 
@@ -17,3 +17,12 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
+**Funcionalidades**
+
+ - Listagem dos pokémons: Listar os pokémons com o uso da API REST.
+
+ - Buscar pokémons: Método para filtrar os pokémons a partir do seu nome.
+
+ - Efeito no cartão do pokémon: Criar uma animação ao usuário apresentar foco no cartão do pokémon.
+
+ - Selecionar pokémon: Criar uma página na aplicação com mais detalhes sobre o pokémon escolhido.

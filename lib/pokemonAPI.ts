@@ -27,7 +27,4 @@ export async function getPokemonText(name: string) {
         }
       }
       return "";
-
-
-    // return console.log(data.flavor_text_entries)
 }
