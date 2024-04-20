@@ -1,13 +1,13 @@
-import { PokemonGrid } from '@/components'
-import { getPokemonList } from '@/lib/pokemonAPI'
+import { PokemonGrid } from "@components";
 
-export default async function Home() {
+console.log(PokemonGrid);
+import { getPokemonList } from "@/lib/pokemonAPI";
 
-  const pokemonList = await getPokemonList();
+export default async function Home({ searchParams }: { searchParams: any }) {
+  const pokemonList = await getPokemonList({
+    page: searchParams?.page ?? 1,
+    limit: 20,
+  });
 
-  
-  return (
-    <PokemonGrid pokemonList={pokemonList} />
-
-  )
+  return <PokemonGrid pokemonList={pokemonList} />;
 }
