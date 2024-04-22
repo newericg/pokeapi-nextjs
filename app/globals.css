@@ -76,7 +76,39 @@
   }
 }
 
+.image-filter {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
 
+}
+
+.image-filter:hover {
+  -webkit-filter: none; /* Safari 6.0 - 9.0 */
+  filter: none;
+  width: 250px;
+  height: 250px;
+  transition: .5s;
+  position: absolute;
+}
+
+
+.card {
+  height: 250px;
+  width: 250px;
+  position: relative;
+}
+
+.card:hover {
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+  transition: .5s;
+}
+
+.card-title {
+  position: absolute;
+  top: 5px;
+}
 
 .pokemon-type[class*="water"] {
   background: #6390F0;
