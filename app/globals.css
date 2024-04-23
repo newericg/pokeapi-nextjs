@@ -87,8 +87,8 @@
 .image-filter:hover {
   -webkit-filter: none; /* Safari 6.0 - 9.0 */
   filter: none;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   transition: .5s;
   position: absolute;
 }
@@ -98,11 +98,20 @@
   height: 250px;
   width: 250px;
   position: relative;
+
+
 }
 
 .card:hover {
-  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
   transition: .5s;
+  --perspective: 500px;
+  --rotationX: 0;
+  --rotationY: 0;
+  --angle: 15deg;
+  transform: 
+    perspective(550px)
+    rotateX(20deg)
+    rotateY(0deg);
 }
 
 .card-title {

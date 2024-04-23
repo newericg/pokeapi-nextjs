@@ -26,3 +26,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
  - Efeito no cartão do pokémon: Criar uma animação ao usuário apresentar foco no cartão do pokémon.
 
  - Selecionar pokémon: Criar uma página na aplicação com mais detalhes sobre o pokémon escolhido.
+
+**Tecnologias**
+
+ - Next js
+
+ - TypeScript
+
+ - React Router
+
+ - React-Icons
